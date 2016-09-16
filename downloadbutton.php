@@ -8,22 +8,22 @@
  * Description: Add a shortcode to your wordpress for a nice downloadbutton. <code>&#91;dl url="" title="" desc="" type="" align=""&#93;</code>. Graphics made by: <a href="http://kkoepke.de">Kai Köpke</a>. If you made your own graphic for this button, feel free to write it in the comments under <a href="http://ppfeufer.de/wordpress-plugin/download-button-shortcode//">http://ppfeufer.de/wordpress-plugin/download-button-shortcode/</a>.
  */
 
-namespace PPWP\Plugin\DownloadButtonShortcode;
+namespace WordPress\Plugins\DownloadButtonShortcode;
 
-class Download_Button_Shortcode {
+class DownloadButtonShortcode {
 	function __construct() {
 		if(!is_admin()) {
 			add_action('init', array(
 				$this,
-				'enqueue_css'
+				'enqueueCss'
 			));
 
 			/**
 			 * Shortcode zu Wordpress hinzufügen
 			 */
-			add_shortcode('dl', array(
+			addShortcode('dl', array(
 				$this,
-				'add_shortcode'
+				'addShortcode'
 			));
 		} // END if(!is_admin())
 
@@ -32,7 +32,7 @@ class Download_Button_Shortcode {
 			if(ini_get('allow_url_fopen') || function_exists('curl_init')) {
 				add_action('in_plugin_update_message-' . plugin_basename(__FILE__), array(
 					$this,
-					'update_notice'
+					'updateNotice'
 				));
 			} // END if(ini_get('allow_url_fopen') || function_exists('curl_init'))
 		} // END if(is_admin())
@@ -41,15 +41,19 @@ class Download_Button_Shortcode {
 	/**
 	 * CSS in Wordpress einbinden
 	 */
-	function enqueue_css() {
-		wp_enqueue_style('download-button-shortcode-css', '/' . PLUGINDIR . '/' . dirname(plugin_basename(__FILE__)) . '/css/downloadbutton.css', false);
-	} // END function enqueue_css()
+	function enqueueCss() {
+		$cssFile = (WP_DEBUG === true)
+				? '/' . PLUGINDIR . '/' . dirname(plugin_basename(__FILE__)) . '/css/downloadbutton.min.css'
+				: '/' . PLUGINDIR . '/' . dirname(plugin_basename(__FILE__)) . '/css/downloadbutton.css';
+
+		wp_enqueue_style('download-button-shortcode-css', $cssFile, false);
+	} // END function enqueueCss()
 
 	/**
 	 * Shortcode in HTML-Code umwandeln
 	 * @param $atts
 	 */
-	function add_shortcode($atts) {
+	function addShortcode($atts) {
 		extract(shortcode_atts(array(
 			'type' => '',
 			'url' => '',
@@ -494,12 +498,12 @@ class Download_Button_Shortcode {
 					</div>';
 
 		return $var_sHTML;
-	} // END function add_shortcode($atts)
+	} // END function addShortcode($atts)
 
 	/**
 	 * Changlog ausgeben
 	 */
-	function update_notice() {
+	function updateNotice() {
 		$array_DLBSC_Data = get_plugin_data(__FILE__);
 		$var_sUserAgent = 'Mozilla/5.0 (X11; Linux x86_64; rv:5.0) Gecko/20100101 Firefox/5.0 WorPress Plugin Download Button Shortcode (Version: ' . $array_DLBSC_Data['Version'] . ') running on: ' . get_bloginfo('url');
 		$url_readme = 'http://plugins.trac.wordpress.org/browser/download-button-shortcode/trunk/readme.txt?format=txt';
@@ -563,7 +567,7 @@ class Download_Button_Shortcode {
 			 */
 			return;
 		} // END if($data)
-	} // END function update_notice()
+	} // END function updateNotice()
 } // END class Download_Button_Shortcode
 
-new Download_Button_Shortcode();
+new DownloadButtonShortcode();

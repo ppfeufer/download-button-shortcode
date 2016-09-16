@@ -24,11 +24,12 @@
 	padding: 0 0 0 50px;
 	background: #ddd;
 	background: -webkit-linear-gradient(top, #ececec, #ddd);
+	background: -webkit-gradient(top, #ececec, #ddd);
 	background: -moz-linear-gradient(top, #ececec, #ddd);
 	background: -o-linear-gradient(top, #ececec, #ddd);
 	background: -ms-linear-gradient(top, #ececec, #ddd);
 	background: linear-gradient(top, #ececec, #ddd);
-	filterrogidXImageTransform.Microsoft.gradient(GradientType, startColorstr='#ececec', endColorstr='#dddddd'); /* IE 7 */ 
+	filterrogidXImageTransform.Microsoft.gradient(GradientType, startColorstr='#ececec', endColorstr='#dddddd'); /* IE 7 */
 	-ms-filterrogidXImageTransform.Microsoft.gradient(GradientType, startColorstr='#ececec', endColorstr='#dddddd'); /* IE 8 */
 	border-radius: 4px;
 }
@@ -48,7 +49,7 @@
 	background: -o-linear-gradient(top , #fff, #f0f0f0);
 	background: -ms-linear-gradient(top , #fff, #f0f0f0);
 	background: linear-gradient(top , #fff, #f0f0f0);
-	filterrogidXImageTransform.Microsoft.gradient(GradientType, startColorstr='#ffffff', endColorstr='#f0f0f0'); /* IE 7 */ 
+	filterrogidXImageTransform.Microsoft.gradient(GradientType, startColorstr='#ffffff', endColorstr='#f0f0f0'); /* IE 7 */
 	-ms-filterrogidXImageTransform.Microsoft.gradient(GradientType, startColorstr='#ffffff', endColorstr='#f0f0f0'); /* IE 8 */
 }
 .dwnld-button-shortcode a span em {
@@ -65,10 +66,10 @@
 	background: -o-linear-gradient(top, #ececec, #ddd);
 	background: -ms-linear-gradient(top, #ececec, #ddd);
 	background: linear-gradient(top, #ececec, #ddd);
-	filterrogidXImageTransform.Microsoft.gradient(GradientType, startColorstr='#ececec', endColorstr='#dddddd'); /* IE 7 */ 
+	filterrogidXImageTransform.Microsoft.gradient(GradientType, startColorstr='#ececec', endColorstr='#dddddd'); /* IE 7 */
 	-ms-filterrogidXImageTransform.Microsoft.gradient(GradientType, startColorstr='#ececec', endColorstr='#dddddd'); /* IE 8 */
 }
-.button-download a { 
+.button-download a {
 	padding-left: 75px;
 	background:url(../img/button-download.png) 20px 45% no-repeat;
 }
