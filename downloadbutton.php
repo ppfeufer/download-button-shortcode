@@ -4,7 +4,7 @@
  * Plugin URI: http://ppfeufer.de/wordpress-plugin/download-button-shortcode/
  * Author: H.-Peter Pfeufer
  * Author URI: http://ppfeufer.de
- * Version: 2.2
+ * Version: 2.3
  * Description: Add a shortcode to your wordpress for a nice downloadbutton. <code>&#91;dl url="" title="" desc="" type="" align=""&#93;</code>. Graphics made by: <a href="http://kkoepke.de">Kai Köpke</a>. If you made your own graphic for this button, feel free to write it in the comments under <a href="http://ppfeufer.de/wordpress-plugin/download-button-shortcode//">http://ppfeufer.de/wordpress-plugin/download-button-shortcode/</a>.
  */
 
@@ -12,8 +12,8 @@ namespace WordPress\Plugins\DownloadButtonShortcode;
 
 class DownloadButtonShortcode {
 	function __construct() {
-		if(!is_admin()) {
-			add_action('init', array(
+		if(!\is_admin()) {
+			\add_action('init', array(
 				$this,
 				'enqueueCss'
 			));
@@ -21,32 +21,22 @@ class DownloadButtonShortcode {
 			/**
 			 * Shortcode zu Wordpress hinzufügen
 			 */
-			addShortcode('dl', array(
+			\addShortcode('dl', array(
 				$this,
 				'addShortcode'
 			));
 		} // END if(!is_admin())
-
-		if(is_admin()) {
-			// Updatemeldung
-			if(ini_get('allow_url_fopen') || function_exists('curl_init')) {
-				add_action('in_plugin_update_message-' . plugin_basename(__FILE__), array(
-					$this,
-					'updateNotice'
-				));
-			} // END if(ini_get('allow_url_fopen') || function_exists('curl_init'))
-		} // END if(is_admin())
 	} // END function __construct()
 
 	/**
 	 * CSS in Wordpress einbinden
 	 */
 	function enqueueCss() {
-		$cssFile = (WP_DEBUG === true)
-				? '/' . PLUGINDIR . '/' . dirname(plugin_basename(__FILE__)) . '/css/downloadbutton.min.css'
-				: '/' . PLUGINDIR . '/' . dirname(plugin_basename(__FILE__)) . '/css/downloadbutton.css';
+		$cssFile = (\WP_DEBUG === true)
+			? '/' . \PLUGINDIR . '/' . \dirname(\plugin_basename(__FILE__)) . '/css/downloadbutton.min.css'
+			: '/' . \PLUGINDIR . '/' . \dirname(\plugin_basename(__FILE__)) . '/css/downloadbutton.css';
 
-		wp_enqueue_style('download-button-shortcode-css', $cssFile, false);
+		\wp_enqueue_style('download-button-shortcode-css', $cssFile, false);
 	} // END function enqueueCss()
 
 	/**
@@ -54,14 +44,21 @@ class DownloadButtonShortcode {
 	 * @param $atts
 	 */
 	function addShortcode($atts) {
-		extract(shortcode_atts(array(
+		$attributes = \shortcode_atts(array(
 			'type' => '',
 			'url' => '',
 			'title' => '',
 			'desc' => '',
 			'align' => '',
 			'target' => ''
-		), $atts));
+		), $atts);
+
+		$type = $attributes['type'];
+		$url = $attributes['url'];
+		$title = $attributes['title'];
+		$desc = $attributes['desc'];
+		$align = $attributes['align'];
+		$target = $attributes['target'];
 
 		$array_Downloadtypes = array(
 			'pdf',
@@ -103,7 +100,7 @@ class DownloadButtonShortcode {
 		 * @since 1.0
 		 */
 		if(!$type) {
-			$var_sFiletype = strrchr($url, ".");
+			$var_sFiletype = \strrchr($url, ".");
 
 			switch($var_sFiletype) {
 				case '.ez':
@@ -474,11 +471,11 @@ class DownloadButtonShortcode {
 		/**
 		 * Downloadtype
 		 */
-		if(strstr($type, ' ')) {
-			$types = explode(' ', $type);
+		if(\strstr($type, ' ')) {
+			$types = \explode(' ', $type);
 		} // END if(strstr($type, ' '))
 
-		if($type && in_array($type, $array_Downloadtypes, true) || isset($types['0'])) {
+		if($type && \in_array($type, $array_Downloadtypes, true) || isset($types['0'])) {
 			$type = 'class="dowload type-' . $type . '"';
 		} else {
 			$type = 'class="download"';
@@ -499,75 +496,6 @@ class DownloadButtonShortcode {
 
 		return $var_sHTML;
 	} // END function addShortcode($atts)
-
-	/**
-	 * Changlog ausgeben
-	 */
-	function updateNotice() {
-		$array_DLBSC_Data = get_plugin_data(__FILE__);
-		$var_sUserAgent = 'Mozilla/5.0 (X11; Linux x86_64; rv:5.0) Gecko/20100101 Firefox/5.0 WorPress Plugin Download Button Shortcode (Version: ' . $array_DLBSC_Data['Version'] . ') running on: ' . get_bloginfo('url');
-		$url_readme = 'http://plugins.trac.wordpress.org/browser/download-button-shortcode/trunk/readme.txt?format=txt';
-		$data = '';
-
-		if(ini_get('allow_url_fopen')) {
-			$data = file_get_contents($url_readme);
-		} else {
-			if(function_exists('curl_init')) {
-				$cUrl_Channel = curl_init();
-				curl_setopt($cUrl_Channel, CURLOPT_URL, $url_readme);
-				curl_setopt($cUrl_Channel, CURLOPT_RETURNTRANSFER, 1);
-				curl_setopt($cUrl_Channel, CURLOPT_USERAGENT, $var_sUserAgent);
-				$data = curl_exec($cUrl_Channel);
-				curl_close($cUrl_Channel);
-			} // END if(function_exists('curl_init'))
-		} // END if(ini_get('allow_url_fopen'))
-
-		if($data) {
-			$matches = null;
-			$regexp = '~==\s*Changelog\s*==\s*=\s*[0-9.]+\s*=(.*)(=\s*' . preg_quote($array_DLBSC_Data['Version']) . '\s*=|$)~Uis';
-
-			if(preg_match($regexp, $data, $matches)) {
-				$changelog = (array) preg_split('~[\r\n]+~', trim($matches[1]));
-
-				echo '</div><div class="update-message" style="font-weight: normal;"><strong>What\'s new:</strong>';
-				$ul = false;
-				$version = 99;
-
-				foreach($changelog as $index => $line) {
-					if(version_compare($version, $array_DLBSC_Data['Version'], ">")) {
-						if(preg_match('~^\s*\*\s*~', $line)) {
-							if(!$ul) {
-								echo '<ul style="list-style: disc; margin-left: 20px;">';
-								$ul = true;
-							} // END if(!$ul)
-
-							$line = preg_replace('~^\s*\*\s*~', '', $line);
-							echo '<li>' . $line . '</li>';
-						} else {
-							if($ul) {
-								echo '</ul>';
-								$ul = false;
-							} // END if($ul)
-
-							$version = trim($line, " =");
-							echo '<p style="margin: 5px 0;">' . htmlspecialchars($line) . '</p>';
-						} // END if(preg_match('~^\s*\*\s*~', $line))
-					} // END if(version_compare($version, TWOCLICK_SOCIALMEDIA_BUTTONS_VERSION,">"))
-				} // END foreach($changelog as $index => $line)
-
-				if($ul) {
-					echo '</ul><div style="clear: left;"></div>';
-				} // END if($ul)
-
-				echo '</div>';
-			} // END if(preg_match($regexp, $data, $matches))
-		} else {
-			/**
-			 * Returning if we can't use file_get_contents or cURL
-			 */
-			return;
-		} // END if($data)
-	} // END function updateNotice()
 } // END class Download_Button_Shortcode
 
 new DownloadButtonShortcode();
