@@ -1,75 +1,84 @@
 /* Download Buttons + Comment Submit Button */
 .dwnld-button-shortcode {
-/* 	margin: 10px; */
-	border-radius: 5px;
-	border: 1px solid #808080;
-	padding: 2px;
-	-webkit-box-shadow: 0 0 3px 0 rgba(125,125,125,0.5), inset 0 0 0 2px #ccc;
-	-moz-box-shadow: 0 0 3px 0 rgba(125,125,125,0.5), inset 0 0 0 2px #ccc;
-	box-shadow: 0 0 3px 0 rgba(125,125,125,0.5), inset 0 0 0 2px #ddd;
-	display: inline-block;
+    border: 1px solid rgb(128 128 128);
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 rgb(125 125 125 / 50%), inset 0 0 0 2px rgb(221 221 221);
+    display: inline-block;
+    padding: 2px;
 }
+
 .dwnld-button-shortcode:hover {
-	-webkit-box-shadow: inset 0 0 0 2px #ddd;
-	-moz-box-shadow: inset 0 0 0 2px #ddd;
-	-ms-box-shadow: inset 0 0 0 2px #ddd;
-	box-shadow: inset 0 0 0 2px #ddd;
+    box-shadow: inset 0 0 0 2px rgb(221 221 221);
 }
+
 .dwnld-button-shortcode:active {
-	border: 1px solid #b3b3b3;
+    border: 1px solid rgb(179 179 179);
 }
+
 .dwnld-button-shortcode a {
-	display: block;
-	padding: 0 0 0 50px;
-	background: #ddd;
-	background: -webkit-linear-gradient(top, #ececec, #ddd);
-	background: -webkit-gradient(top, #ececec, #ddd);
-	background: -moz-linear-gradient(top, #ececec, #ddd);
-	background: -o-linear-gradient(top, #ececec, #ddd);
-	background: -ms-linear-gradient(top, #ececec, #ddd);
-	background: linear-gradient(top, #ececec, #ddd);
-	border-radius: 4px;
+    background: linear-gradient(rgb(236 236 236), rgb(221 221 221));
+    border-radius: 4px;
+    display: block;
+    padding: 0 0 0 50px;
 }
-.dwnld-button-shortcode a, .dwnld-button-shortcode a:hover, .dwnld-button-shortcode a:active {
-	text-decoration:none;
-	color: #373737;
+
+.dwnld-button-shortcode a,
+.dwnld-button-shortcode a:hover,
+.dwnld-button-shortcode a:active {
+    color: rgb(55 55 55);
+    text-decoration: none;
 }
+
 .dwnld-button-shortcode > a > span {
-	padding: 15px;
-	border-radius: 0 3px 3px 0;
-	display: block;
-	font-size: 18px;
-	line-height:100%;
-	background: #fff;
-	background: -webkit-linear-gradient(top , #fff, #f0f0f0);
-	background: -moz-linear-gradient(top , #fff, #f0f0f0);
-	background: -o-linear-gradient(top , #fff, #f0f0f0);
-	background: -ms-linear-gradient(top , #fff, #f0f0f0);
-	background: linear-gradient(top , #fff, #f0f0f0);
+    background: linear-gradient(rgb(255 255 255), rgb(240 240 240));
+    border-radius: 0 3px 3px 0;
+    display: block;
+    font-size: 18px;
+    line-height: 100%;
+    padding: 15px;
 }
+
 .dwnld-button-shortcode a span em {
-	font-size: 14px;
+    font-size: 14px;
 }
+
 .button-download {
-	width: 100%;
-	max-width: 280px !important;
-	position: relative;
-	display: block;
-	background: #ddd;
-	background: -webkit-linear-gradient(top, #ececec, #ddd);
-	background: -moz-linear-gradient(top, #ececec, #ddd);
-	background: -o-linear-gradient(top, #ececec, #ddd);
-	background: -ms-linear-gradient(top, #ececec, #ddd);
-	background: linear-gradient(top, #ececec, #ddd);
+    background: linear-gradient(rgb(236 236 236), rgb(221 221 221));
+    display: block;
+    max-width: 280px !important;
+    position: relative;
+    width: 100%;
 }
+
 .button-download a {
-	padding-left: 75px;
-	background:url(../img/button-download.png) 20px 45% no-repeat;
+    background: url("../img/button-download.png") 20px 45% no-repeat;
+    padding-left: 75px;
 }
-.button-download a.type-pdf {background:url(../img/button-pdf.png) 18px 45% no-repeat;}
-.button-download a.type-link {background:url(../img/button-link.png) 20px 45% no-repeat;}
-.button-download a.type-doc {background:url(../img/button-doc.png) 20px 45% no-repeat;}
-.button-download a.type-image {background:url(../img/button-image.png) 20px 45% no-repeat;}
-.button-download a.type-archive {background:url(../img/button-archive.png) 20px 45% no-repeat;}
-.button-download a.type-audio {background:url(../img/button-audio.png) 20px 45% no-repeat;}
-.button-download a.type-video {background:url(../img/button-video.png) 20px 45% no-repeat;}
+
+.button-download a.type-pdf {
+    background: url("../img/button-pdf.png") 18px 45% no-repeat;
+}
+
+.button-download a.type-link {
+    background: url("../img/button-link.png") 20px 45% no-repeat;
+}
+
+.button-download a.type-doc {
+    background: url("../img/button-doc.png") 20px 45% no-repeat;
+}
+
+.button-download a.type-image {
+    background: url("../img/button-image.png") 20px 45% no-repeat;
+}
+
+.button-download a.type-archive {
+    background: url("../img/button-archive.png") 20px 45% no-repeat;
+}
+
+.button-download a.type-audio {
+    background: url("../img/button-audio.png") 20px 45% no-repeat;
+}
+
+.button-download a.type-video {
+    background: url("../img/button-video.png") 20px 45% no-repeat;
+}
