@@ -3,7 +3,7 @@ Contributors: ppfeufer
 Donate link: https://ko-fi.com/ppfeufer
 Tags: download, button, shortcode
 Requires at least: 6.0
-Tested up to: 6.8-alpha
+Tested up to: 6.8
 
 Add a shortcode to your WordPress for a nice download button.
 
