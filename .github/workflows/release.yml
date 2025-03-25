@@ -29,4 +29,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           files: |
-            pp-wordpress-tweaks.zip
+            download-button-shortcode.zip
