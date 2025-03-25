@@ -16,6 +16,8 @@
  * Author URI: https://ppfeufer.de
  * Version: 2.4
  * Description: Adds a shortcode to your WordPress for a nice download button. <code>&#91;dl url="" title="" desc="" type="" align=""&#93;</code>. Graphics made by: Kai Köpke.
+ * Text Domain: download-button-shortcode
+ * Domain Path: /l10n
  */
 
 namespace Ppfeufer\Plugin\DownloadButtonShortcode;
