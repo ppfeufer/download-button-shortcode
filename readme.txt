@@ -6,7 +6,7 @@ Requires at least: 3.0
 Tested up to: 4.7-alpha
 Stable tag: 2.3
 
-Add a shortcode to your wordpress for a nice downloadbutton.
+Add a shortcode to your WordPress for a nice download button.
 
 == Description ==
 
