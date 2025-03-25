@@ -12,12 +12,16 @@
  * @wordpress-plugin
  * Plugin name: Download Button Shortcode
  * Plugin URI: https://github.com/ppfeufer/download-button-shortcode
+ * Description: Adds a shortcode to your WordPress for a nice download button. <code>&#91;dl url="" title="" desc="" type="" align=""&#93;</code>. Graphics made by: Kai Köpke.
+ * Version: 2.4
+ * Requires at least: 6.0
+ * Requires PHP: 8.2
  * Author: H. Peter Pfeufer
  * Author URI: https://ppfeufer.de
- * Version: 2.4
- * Description: Adds a shortcode to your WordPress for a nice download button. <code>&#91;dl url="" title="" desc="" type="" align=""&#93;</code>. Graphics made by: Kai Köpke.
  * Text Domain: download-button-shortcode
  * Domain Path: /l10n
+ * License: GPLv3
+ * License URI: https://github.com/ppfeufer/download-button-shortcode/blob/master/LICENSE
  */
 
 namespace Ppfeufer\Plugin\DownloadButtonShortcode;
@@ -78,6 +82,10 @@ const PLUGIN_SOURCE_PATH = PLUGIN_DIR_PATH . '/Sources';
  * Plugin library path (without trailing slash)
  */
 const PLUGIN_LIBRARY_PATH = PLUGIN_SOURCE_PATH . '/Libs';
+
+const PLUGIN_SLUG = 'download-button-shortcode';
+
+const PLUGIN_GITHUB_URL = 'https://github.com/ppfeufer/' . PLUGIN_SLUG . '/';
 
 // Include the plugin autoloader
 require_once PLUGIN_SOURCE_PATH . '/autoload.php';

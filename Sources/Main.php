@@ -38,9 +38,9 @@ class Main {
      */
     public function doUpdateCheck(): void {
         PucFactory::buildUpdateChecker(
-            metadataUrl: 'https://github.com/ppfeufer/download-button-shortcode/',
+            metadataUrl: PLUGIN_GITHUB_URL,
             fullPath: PLUGIN_DIR_PATH . '/DownloadButtonShortcode.php',
-            slug: 'download-button-shortcode'
+            slug: PLUGIN_SLUG
         )->getVcsApi()->enableReleaseAssets();
     }
 
@@ -54,7 +54,7 @@ class Main {
         // Load the text domain.
         add_action(hook_name: 'init', callback: static function () {
             load_plugin_textdomain(
-                domain: 'pp-wordpress-tweaks',
+                domain: PLUGIN_SLUG,
                 plugin_rel_path: PLUGIN_REL_PATH . '/l10n'
             );
         });
