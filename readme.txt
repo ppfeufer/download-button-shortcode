@@ -22,41 +22,41 @@ You can use the built in installer and upgrader, or you can install the plugin m
 
 == Changelog ==
 
-### [3.0.0] - 2025-03-25
+### 3.0.0 - 2025-03-25
 
 #### Changed
 
 - Complete code refactoring.
 
-### [2.3] - 2021-09-23
+### 2.3 - 2021-09-23
 
 #### Added
 
-- minified CSS
+- Minified CSS
 
 #### Changed
 
 - Some code improvements
 
-### [2.2] - 2012-02-17
+### 2.2 - 2012-02-17
 
 #### Changed
 
 - Tested up to WordPress 4.2-alpha
 
-### [2.1] - 2012-11-02
+### 2.1 - 2012-11-02
 
 #### Changed
 
 - Tested up to WordPress 3.8-alpha
 
-### [2.0] - 2012-07-22
+### 2.0 - 2012-07-22
 
 #### Changed
 
 - Code Cleanup
 
-### [1.3.1] - 2012-06-06
+### 1.3.1 - 2012-06-06
 
 #### Fixed
 
@@ -73,38 +73,38 @@ You can use the built in installer and upgrader, or you can install the plugin m
 - Updated CSS
 - Updated Look and Feel. It looks more modern now.
 
-### [1.2] - 2012-02-27
+### 1.2 - 2012-02-27
 
-### Changed
+#### Changed
 
 - Moved CSS from an external file to inline. Loads faster
 
-### [1.1.2] - 2011-11-09
+### 1.1.2 - 2011-11-09
 
 #### Changed
 
 - Ready for WordPress 3.3
 
-### [1.1.2] - 2011-02-24
+### 1.1.2 - 2011-02-24
 
 #### Changed
 
 - Ready for WordPress 3.1
 
-### [1.1.1]
+### 1.1.1
 
 #### Changed
 
 - Renamed to Download Button Shortcode
 - Upload to WordPress Plugin Directory
 
-### [1.1.0]
+### 1.1.0
 
-### Added
+#### Added
 
-- Shortcode option for Buttonposition `[dl url="" title="" desc="" align=""]`. This is optional. If not set, the button will appear centered. Possible options are `center`, `left` and `right`
+- Shortcode option for Buttonposition `dl url="" title="" desc="" align=""`. This is optional. If not set, the button will appear centered. Possible options are `center`, `left` and `right`
 
-### [1.0.0]
+### 1.0.0
 
 #### Added
 
