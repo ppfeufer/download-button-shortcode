@@ -53,6 +53,7 @@
 .button-download a {
     background: url("../img/button-download.png") 20px 45% no-repeat;
     padding-left: 75px;
+    text-decoration: none !important;
 }
 
 .button-download a[class*="download-item-type-pdf"] {

@@ -37,6 +37,12 @@ Section Order:
 #### Security
 -->
 
+### 3.0.1 - 2025-03-25
+
+#### Removed
+
+- Text decoration from the button description.
+
 ### 3.0.0 - 2025-03-25
 
 #### Changed
