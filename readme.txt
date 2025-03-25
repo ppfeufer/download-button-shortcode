@@ -1,20 +1,19 @@
 === Download Button Shortcode ===
 Contributors: ppfeufer
-Donate link:
+Donate link: https://ko-fi.com/ppfeufer
 Tags: download, button, shortcode
-Requires at least: 3.0
-Tested up to: 4.7-alpha
-Stable tag: 2.3
+Requires at least: 6.0
+Tested up to: 6.8-alpha
 
 Add a shortcode to your WordPress for a nice download button.
 
 == Description ==
 
-Add a shortcode to your wordpress for a nice downloadbutton. <code>&#91;dl url="" title="" desc="" type="" align=""&#93;</code>.<br />Graphics made by: <a href="http://kkoepke.de">Kai Köpke</a>.<br />If you made your own graphic for this button, feel free to write it in the comments under <a href="http://blog.ppfeufer.de/wordpress-button-fuer-downloads-erzeugen/">http://blog.ppfeufer.de/wordpress-button-fuer-downloads-erzeugen/</a>.
+Add a shortcode to your WordPress for a nice download button. <code>&#91;dl url="" title="" desc="" type="" align=""&#93;</code>.<br />Graphics made by: Kai Köpke.
 
 == Installation ==
 
-You can use the built in installer and upgrader, or you can install the plugin manually.
+You can use the built-in installer and updater, or you can install the plugin manually.
 
 == Screenshots ==
 
