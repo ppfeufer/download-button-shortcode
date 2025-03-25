@@ -22,6 +22,12 @@ You can use the built in installer and upgrader, or you can install the plugin m
 
 == Changelog ==
 
+### [3.0.0] - 2025-03-25
+
+#### Changed
+
+- Complete code refactoring.
+
 ### [2.3] - 2021-09-23
 
 #### Added
