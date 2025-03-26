@@ -1,0 +1,42 @@
+# Copyright (C) 2025 H. Peter Pfeufer
+# This file is distributed under the GPLv3.
+# Languages add-on <noreply-addon-languages@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: Download Button Shortcode 3.0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/ppfeufer/download-button-shortcode/issues\n"
+"POT-Creation-Date: 2025-03-25T19:39:40+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: download-button-shortcode\n"
+
+#. Plugin Name of the plugin
+#: DownloadButtonShortcode.php
+msgid "Download Button Shortcode"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: DownloadButtonShortcode.php
+msgid "https://github.com/ppfeufer/download-button-shortcode"
+msgstr ""
+
+#. Description of the plugin
+#: DownloadButtonShortcode.php
+msgid "Adds a shortcode to your WordPress for a nice download button. <code>&#91;dl url=\"\" title=\"\" desc=\"\" type=\"\" align=\"\"&#93;</code>. Graphics made by: Kai Köpke."
+msgstr ""
+
+#. Author of the plugin
+#: DownloadButtonShortcode.php
+msgid "H. Peter Pfeufer"
+msgstr ""
+
+#. Author URI of the plugin
+#: DownloadButtonShortcode.php
+msgid "https://ppfeufer.de"
+msgstr ""
