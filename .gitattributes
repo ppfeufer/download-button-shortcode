@@ -26,3 +26,8 @@ README.md export-ignore
 eslint.config.js export-ignore
 Makefile export-ignore
 CODEOWNERS export-ignore
+
+# directories
+bin/ export-ignore
+node_modules/ export-ignore
+vendor/ export-ignore

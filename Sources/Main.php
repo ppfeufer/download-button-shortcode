@@ -2,7 +2,7 @@
 
 namespace Ppfeufer\Plugin\DownloadButtonShortcode;
 
-use Ppfeufer\Plugin\DownloadButtonShortcode\Libs\YahnisElsts\PluginUpdateChecker\v5p5\PucFactory;
+use Ppfeufer\Plugin\DownloadButtonShortcode\Libs\YahnisElsts\PluginUpdateChecker\v5p6\PucFactory;
 
 /**
  * Main class for the Download Button Shortcode plugin
