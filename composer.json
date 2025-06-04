@@ -50,7 +50,7 @@
             "Ppfeufer\\Plugin\\DownloadButtonShortcode\\": "Sources"
         },
         "classmap": [
-            "vendor"
+            "Sources/Libs"
         ]
     }
 }
