@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Download Button Shortcode 3.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/ppfeufer/download-button-shortcode/issues\n"
-"POT-Creation-Date: 2025-03-25T19:39:40+00:00\n"
-"PO-Revision-Date: 2025-04-13 08:38+0000\n"
+"POT-Creation-Date: 2025-07-10T05:32:32+00:00\n"
+"PO-Revision-Date: 2025-06-19 07:02+0000\n"
 "Last-Translator: s0k0l -_- <salarysalo@gmail.com>\n"
 "Language-Team: Ukrainian <https://weblate.ppfeufer.de/projects/wordpress-plugins/download-button-shortcode/uk/>\n"
 "Language: uk\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Domain: download-button-shortcode\n"
 
 #. Plugin Name of the plugin
@@ -32,7 +32,7 @@ msgstr "https://github.com/ppfeufer/download-button-shortcode"
 #. Description of the plugin
 #: DownloadButtonShortcode.php
 msgid "Adds a shortcode to your WordPress for a nice download button. <code>&#91;dl url=\"\" title=\"\" desc=\"\" type=\"\" align=\"\"&#93;</code>. Graphics made by: Kai Köpke."
-msgstr "Додає шорткод в Ваш Вордпрес для прикрашення конпки Скачування. <code>&#91;dl url=\"\" title=\"\" desc=\"\" type=\"\" align=\"\"&#93;</code>. Графіку воконав: Kai Köpke."
+msgstr "Додає шорткод в Ваш Вордпрес для прикрашення кнопки Скачування. <code>&#91;dl url=\"\" title=\"\" desc=\"\" type=\"\" align=\"\"&#93;</code>. Графіку воконав: Kai Köpke."
 
 #. Author of the plugin
 #: DownloadButtonShortcode.php
