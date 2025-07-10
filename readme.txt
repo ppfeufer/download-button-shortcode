@@ -21,6 +21,13 @@ You can use the built-in installer and updater, or you can install the plugin ma
 
 == Changelog ==
 
+### 3.0.2 - 2025-07-10
+
+#### Changed
+
+- Translations updated
+- External libraries updated
+
 ### 3.0.1 - 2025-03-25
 
 #### Removed
