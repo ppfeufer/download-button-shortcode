@@ -37,6 +37,13 @@ Section Order:
 #### Security
 -->
 
+### 3.0.2 - 2025-07-10
+
+#### Changed
+
+- Translations updated
+- External libraries updated
+
 ### 3.0.1 - 2025-03-25
 
 #### Removed
