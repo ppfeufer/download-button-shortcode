@@ -21,6 +21,12 @@ You can use the built-in installer and updater, or you can install the plugin ma
 
 == Changelog ==
 
+### 3.0.3 - 2025-07-10
+
+### Fixed
+
+- Package name in plugin metadata
+
 ### 3.0.2 - 2025-07-10
 
 #### Changed
