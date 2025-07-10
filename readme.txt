@@ -23,7 +23,7 @@ You can use the built-in installer and updater, or you can install the plugin ma
 
 ### 3.0.3 - 2025-07-10
 
-### Fixed
+#### Fixed
 
 - Package name in plugin metadata
 

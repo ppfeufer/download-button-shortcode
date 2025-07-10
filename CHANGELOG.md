@@ -39,7 +39,7 @@ Section Order:
 
 ### 3.0.3 - 2025-07-10
 
-### Fixed
+#### Fixed
 
 - Package name in plugin metadata
 
