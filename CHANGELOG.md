@@ -37,6 +37,10 @@ Section Order:
 #### Security
 -->
 
+### Changed
+
+- CSS modernized
+
 ### 3.0.3 - 2025-07-10
 
 #### Fixed
