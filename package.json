@@ -1,5 +1,6 @@
 {
-    "name": "download-button-shortcode",
+    "name": "@ppfeufer/download-button-shortcode",
+    "version": "3.0.3",
     "type": "module",
     "devDependencies": {
         "@eslint/js": "^10.0.1",
