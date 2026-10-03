@@ -15,7 +15,7 @@
  * Description: Adds a shortcode to your WordPress for a nice download button. <code>&#91;dl url="" title="" desc="" type="" align=""&#93;</code>. Graphics made by: Kai Köpke.
  * Version: 3.0.3
  * Requires at least: 6.0
- * Requires PHP: 8.2
+ * Requires PHP: 8.4
  * Author: H. Peter Pfeufer
  * Author URI: https://ppfeufer.de
  * Text Domain: download-button-shortcode
