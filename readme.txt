@@ -9,11 +9,11 @@ Add a shortcode to your WordPress for a nice download button.
 
 == Description ==
 
-Add a shortcode to your WordPress for a nice download button. <code>&#91;dl url="" title="" desc="" type="" align=""&#93;</code>.<br />Graphics made by: Kai Köpke.
+Add a shortcode to your WordPress for a nice download button. <code>[dl url="" title="" desc="" type="" align=""]</code>.<br>Graphics made by: Kai Köpke.
 
 == Installation ==
 
-You can use the built-in installer and updater, or you can install the plugin manually.
+You can use the built-in installer and updater, or you can install the plugin manually
 
 == Screenshots ==
 
@@ -38,13 +38,13 @@ You can use the built-in installer and updater, or you can install the plugin ma
 
 #### Removed
 
-- Text decoration from the button description.
+- Text decoration from the button description
 
 ### 3.0.0 - 2025-03-25
 
 #### Changed
 
-- Complete code refactoring.
+- Complete code refactoring
 
 ### 2.3 - 2021-09-23
 
@@ -78,7 +78,7 @@ You can use the built-in installer and updater, or you can install the plugin ma
 
 #### Fixed
 
-- CSS loading. Now it will only be loaded on frontend view.
+- CSS loading
 
 ### 1.3 - 2012-04-29
 
@@ -89,13 +89,13 @@ You can use the built-in installer and updater, or you can install the plugin ma
 #### Changed
 
 - Updated CSS
-- Updated Look and Feel. It looks more modern now.
+- Updated look and feel to be more modern
 
 ### 1.2 - 2012-02-27
 
 #### Changed
 
-- Moved CSS from an external file to inline. Loads faster
+- Moved CSS from an external file to inline
 
 ### 1.1.2 - 2011-11-09
 
@@ -120,18 +120,13 @@ You can use the built-in installer and updater, or you can install the plugin ma
 
 #### Added
 
-- Shortcode option for Buttonposition `dl url="" title="" desc="" align=""`. This is optional. If not set, the button will appear centered. Possible options are `center`, `left` and `right`
+- Shortcode option for button position `[dl url="" title="" desc="" align=""]`. This is optional. If not set, the button will appear centered. Possible options are `center`, `left` and `right`
 
 ### 1.0.0
 
 #### Added
 
 - Initial Release
-
-== Frequently Asked Questions ==
-
-<strong>Q:</strong> Why the button looks so creepy?<br />
-<strong>A:</strong> If you use a webkit browser (Safari, Chrome) and a minify-plugin (WP-Minify) you have to exclude downloadbutton.css from minify.
 
 == Upgrade Notice ==
 

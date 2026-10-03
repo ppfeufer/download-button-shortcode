@@ -25,11 +25,11 @@ ______________________________________________________________________
 ## Minimum Requirements<a name="minimum-requirements"></a>
 
 - WordPress 6.0
-- PHP 8.2
+- PHP 8.4
 
 ## Translation Status<a name="translation-status"></a>
 
-[![Translation status](https://weblate.ppfeufer.de/widget/wordpress-plugins/download-button-shortcode/multi-auto.svg)](https://weblate.ppfeufer.de/engage/wordpress-plugins/)
+[![Translation status](https://weblate.ppfeufer.de/widget/wordpress-plugins/download-button-shortcode/matrix-auto.svg)](https://weblate.ppfeufer.de/engage/wordpress-plugins/)
 
 Do you want to help translate this plugin into your language or improve the existing
 translation? - [Join our team of translators][weblate engage]!
