@@ -26,6 +26,10 @@ README.md export-ignore
 eslint.config.js export-ignore
 Makefile export-ignore
 CODEOWNERS export-ignore
+/*.min.css export-ignore
+/*.min.css.map export-ignore
+/*.min.js export-ignore
+/*.min.js.map export-ignore
 
 # directories
 bin/ export-ignore
