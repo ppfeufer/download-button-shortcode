@@ -2,8 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on Keep a Changelog(http://keepachangelog.com/)
-and this project adheres to Semantic Versioning(http://semver.org/).
+The format is based on [Keep a Changelog] and this project adheres to [Semantic Versioning].
 
 <!--
 GitHub MD Syntax:
@@ -12,34 +11,49 @@ https://docs.github.com/en/get-started/writing-on-github/getting-started-with-wr
 Highlighting:
 https://docs.github.com/assets/cb-41128/mw-1440/images/help/writing/alerts-rendered.webp
 
-> !NOTE
+> [!NOTE]
+>
 > Highlights information that users should take into account, even when skimming.
 
-> !IMPORTANT
+> [!TIP]
+>
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]
+>
 > Crucial information necessary for users to succeed.
 
-> !WARNING
-> Critical content demanding immediate user attention due to potential risks.
+> [!WARNING]
+>
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+>
+> Advised about risks or negative outcomes of certain actions.
 -->
 
-## Changes in Chronological Order
-
-### In Development - Unreleased
+## [In Development] - Unreleased
 
 <!--
 Section Order:
 
-#### Added
-#### Fixed
-#### Changed
-#### Deprecated
-#### Removed
-#### Security
+### Added
+### Fixed
+### Changed
+### Deprecated
+### Removed
+### Security
+### Miscellaneous
 -->
 
-### Changed
+<!-- Your changes go here -->
+
+### 3.1.0 - 2025-07-10
+
+#### Changed
 
 - CSS modernized
+- Minimum PHP version raised to 8.4
 
 ### 3.0.3 - 2025-07-10
 
