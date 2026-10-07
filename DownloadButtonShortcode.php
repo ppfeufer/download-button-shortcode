@@ -7,13 +7,13 @@
  * @package Ppfeufer\Plugin\DownloadButtonShortcode
  * @author H. Peter Pfeufer
  * @license GPL-3.0-or-later
- * @version 3.0.3
+ * @version 3.1.0
  *
  * @wordpress-plugin
  * Plugin name: Download Button Shortcode
  * Plugin URI: https://github.com/ppfeufer/download-button-shortcode
  * Description: Adds a shortcode to your WordPress for a nice download button. <code>&#91;dl url="" title="" desc="" type="" align=""&#93;</code>. Graphics made by: Kai Köpke.
- * Version: 3.0.3
+ * Version: 3.1.0
  * Requires at least: 6.0
  * Requires PHP: 8.4
  * Author: H. Peter Pfeufer

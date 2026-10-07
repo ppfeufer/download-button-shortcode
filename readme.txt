@@ -21,6 +21,13 @@ You can use the built-in installer and updater, or you can install the plugin ma
 
 == Changelog ==
 
+### 3.1.0 - 2025-07-10
+
+#### Changed
+
+- CSS modernized
+- Minimum PHP version raised to 8.4
+
 ### 3.0.3 - 2025-07-10
 
 #### Fixed
