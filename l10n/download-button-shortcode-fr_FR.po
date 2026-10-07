@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Download Button Shortcode 3.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/ppfeufer/download-button-shortcode/issues\n"
-"POT-Creation-Date: 2025-07-10T05:32:32+00:00\n"
+"POT-Creation-Date: 2026-10-07T09:50:03+00:00\n"
 "PO-Revision-Date: 2025-03-27 20:24+0000\n"
 "Last-Translator: Peter Pfeufer <info@ppfeufer.de>\n"
 "Language-Team: French <https://weblate.ppfeufer.de/projects/wordpress-plugins/download-button-shortcode/fr/>\n"
@@ -19,26 +19,26 @@ msgstr ""
 "X-Domain: download-button-shortcode\n"
 
 #. Plugin Name of the plugin
-#: DownloadButtonShortcode.php
+#: DownloadButtonShortcode.php:13
 msgid "Download Button Shortcode"
 msgstr ""
 
 #. Plugin URI of the plugin
-#: DownloadButtonShortcode.php
+#: DownloadButtonShortcode.php:14
 msgid "https://github.com/ppfeufer/download-button-shortcode"
 msgstr "https://github.com/ppfeufer/download-button-shortcode"
 
 #. Description of the plugin
-#: DownloadButtonShortcode.php
+#: DownloadButtonShortcode.php:15
 msgid "Adds a shortcode to your WordPress for a nice download button. <code>&#91;dl url=\"\" title=\"\" desc=\"\" type=\"\" align=\"\"&#93;</code>. Graphics made by: Kai Köpke."
 msgstr ""
 
 #. Author of the plugin
-#: DownloadButtonShortcode.php
+#: DownloadButtonShortcode.php:19
 msgid "H. Peter Pfeufer"
 msgstr "H. Peter Pfeufer"
 
 #. Author URI of the plugin
-#: DownloadButtonShortcode.php
+#: DownloadButtonShortcode.php:20
 msgid "https://ppfeufer.de"
 msgstr "https://ppfeufer.de"
