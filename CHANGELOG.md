@@ -48,7 +48,7 @@ Section Order:
 
 <!-- Your changes go here -->
 
-### 3.1.0 - 2025-07-10
+### 3.1.0 - 2026-10-07
 
 #### Changed
 
